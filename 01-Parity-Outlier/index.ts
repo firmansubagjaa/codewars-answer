@@ -4,6 +4,24 @@
    jika i adalah genap dan array[i] adalah ganjil maka return array[i]
 */
 
+/*
+  Parity Outlier
+  apa itu parity outlier? parity outlier adalah sebuah angka yang tidak 
+  habis dibagi dua atau habis dibagi empat yang tidak sama dengan 0 
+
+  1. siapkan sebuah function bernama findOutlier yang menerima sebuah array of
+      number
+  2. lalu didalam function, kita buatkan sebuah variable dimana even = 0 dan
+      odd = 0 yang bertujuan untuk menyimpan angka genap dan ganjil
+  3. lalu kita buat sebuah perulangan dimana i adalah index dari array (0)
+  4. lalu kita membuat sebuah validasi dimana 
+        - jika array[i] % 2 === 0, maka, variable even akan bertambah 1
+        - jika array[i] % 2 !== 0,  maka, variable odd akan bertambah 1
+  5. lalu sesudah melakukan for looping dan validasi, kita melakukan validasi
+        - jika variable even === 1, maka return array[i]
+        - jika variable odd === 1,  maka return array[i]
+*/
+
 const findOutlier = (arr: number[]): void => {
   let even: number[] = [];
   let odd: number[] = [];
